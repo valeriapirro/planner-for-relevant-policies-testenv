@@ -12,7 +12,7 @@ def update_pddl_file(filename, task_dict):
     if task not in task_dict:
         print(f"Unknown task '{task}'. Cannot proceed.")
         return
-   if bathroom_task != "yes" and bathroom_task != "no":
+    if bathroom_task != "yes" and bathroom_task != "no":
         print(f"Unknown task '{bathroom_task}'. Cannot proceed, insert yes or no. ")
         return
 
