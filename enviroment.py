@@ -22,7 +22,7 @@ def update_pddl_file(filename, task_dict):
     
     # Update lines
     if "yes" in bathroom_task:
-        lines[50] = f"{task_dict[task][0]}\n"  # Line 51 (old Line 23)
+        lines[50] = f"{task_dict["bagno"][0]}\n"  # Line 51 (old Line 23)
     else:
         lines[50] = f" (is-fine vis1)\n"  # Line 51 (old Line 23)
     
@@ -37,7 +37,7 @@ def update_pddl_file(filename, task_dict):
         print("Warning: file has less than 32 lines. Cannot replace line 32.")
     
     if "yes" in bathroom_task:
-        lines[58] = f"{task_dict[task][1]}\n"  # Line 59 (old Line 31)
+        lines[58] = f"{task_dict[bagno][1]}\n"  # Line 59 (old Line 31)
     else:
         lines[58] = f" \n"  # Line 59 (old Line 31)
         
