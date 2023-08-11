@@ -47,7 +47,7 @@
 
 
     ;da aggiornare dinamicamente
-    (is-task-p1_1 p11)
+    (is-task-p1_1 p11)(is-task p11)
     (needs-restroom vis1)
     ;------------------
 )
