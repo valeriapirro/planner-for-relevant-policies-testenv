@@ -13,7 +13,7 @@
     (is-fine ?visitor)
     
     
-    
+    (is-task ?t)
     (is-task-history ?t)
     (is-task-p1_1 ?t)
     (is-task-p1_2 ?t)
@@ -62,6 +62,7 @@
         (is-visitor ?visitor)
         (is-fine ?visitor)
         (is-pos ?task)
+        (is-task ?task)
         (at ?agent ?task)
     )
     :effect (oneof
