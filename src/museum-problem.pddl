@@ -47,8 +47,8 @@
 
 
     ;da aggiornare dinamicamente
-    (is-task-p1_1 p11)(is-task p11)
-    (needs-restroom vis1)
+    (is-task-p1_2 p12)
+    (needs-restroom vis1);(is-fine vis1)
     ;------------------
 )
 
@@ -57,7 +57,7 @@
 ; and the painting to play
 (:goal (and
     ;da aggiornare dinamicamente
-    (played_P1_1 vis1)
+    (played_P1_2 vis1)
     ;---------------
 ))
 
