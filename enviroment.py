@@ -59,7 +59,7 @@ task_dict = {
     "quadro2_s2": ("(is-task-p2_2 p22)", "(played_P2_2 vis1)"),
     "quadro3_s2": ("(is-task-p2_3 p32)", "(played_P2_3 vis1)"),
     "quadro4_s2": ("(is-task-p2_4 p42)", "(played_P2_4 vis1)"),
-    "tour_s1": ("(is-task-p1_1 p11)(is-task-p1_2 p21)(is-task-p1_3 p31)(is-task-p41 p41)", "(played_P1_1 vis1)(played_P1_2 vis1)(played_P1_3 vis1)(played_P1_4 vis1)"),
+    "tour_s1": ("(is-task-p1_1 p11)(is-task-p1_2 p21)(is-task-p1_3 p31)(is-task-p1_4 p41)", "(played_P1_1 vis1)(played_P1_2 vis1)(played_P1_3 vis1)(played_P1_4 vis1)"),
     "tour_s2": ("(is-task-p2_1 p12)(is-task-p2_2 p22)(is-task-p2_3 p32)(is-task-p2_4 p42)", "(played_P2_1 vis1)(played_P2_2 vis1)(played_P2_3 vis1)(played_P2_4 vis1)"),
     # Add more tasks if needed
 }
