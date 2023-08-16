@@ -6,25 +6,25 @@ def update_pddl_file(filename, task_dict):
         print(key)
     
     task = input("Please enter the task: ")
-    #bathroom_task = input("Do you need the bathroom? : ")
+    bathroom_task = input("Do you need the bathroom? : ")
     
     # Check if task is in the dictionary
     if task not in task_dict:
         print(f"Unknown task '{task}'. Cannot proceed.")
         return
-    #if bathroom_task != "yes" and bathroom_task != "no":
-        #print(f"Unknown task '{bathroom_task}'. Cannot proceed, insert yes or no. ")
-        #return
+    if bathroom_task != "yes" and bathroom_task != "no":
+        print(f"Unknown task '{bathroom_task}'. Cannot proceed, insert yes or no. ")
+        return
 
     # Open the file and read lines
     with open(filename, 'r') as file:
         lines = file.readlines()
     
     # Update lines
-    #if "yes" in bathroom_task:
-     #   lines[50] = f"(needs-restroom vis1)\n"  # Line 51 (old Line 23)
-    #else:
-     #   lines[50] = f" (is-fine vis1)\n"  # Line 51 (old Line 23)
+    if "yes" in bathroom_task:
+        lines[50] = f"(needs-restroom vis1)\n"  # Line 51 (old Line 23)
+    else:
+        lines[50] = f" (is-fine vis1)\n"  # Line 51 (old Line 23)
     
     if len(lines) > 22:
         lines[49] = f"{task_dict[task][0]}\n"  # Line 50 (old Line 22)
@@ -36,10 +36,10 @@ def update_pddl_file(filename, task_dict):
     else:
         print("Warning: file has less than 32 lines. Cannot replace line 32.")
     
-    #if "yes" in bathroom_task:
-     #   lines[58] = f"(is-fine vis1)\n"  # Line 59 (old Line 31)
-    #else:
-     #   lines[58] = f" \n"  # Line 59 (old Line 31)
+    if "yes" in bathroom_task:
+        lines[58] = f"(is-fine vis1)\n"  # Line 59 (old Line 31)
+    else:
+        lines[58] = f" \n"  # Line 59 (old Line 31)
         
     # Write lines back to file
     with open(filename, 'w') as file:
